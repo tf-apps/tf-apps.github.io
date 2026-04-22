@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BikePass – Datenschutzerklärung</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif; background: #F2F2F7; color: #1C1C1E; line-height: 1.6; }
+    header { background: linear-gradient(135deg, #4B9EF5 0%, #7B5CC8 45%, #E8506A 100%); padding: 40px 24px; text-align: center; color: white; }
+    .logo { font-size: 32px; font-weight: 700; margin-bottom: 4px; }
+    .logo-sub { font-size: 14px; opacity: 0.85; margin-bottom: 16px; }
+    .badge { display: inline-block; background: rgba(255,255,255,0.2); border-radius: 20px; padding: 6px 16px; font-size: 13px; }
+    .container { max-width: 720px; margin: 0 auto; padding: 32px 24px 64px; }
+    .card { background: white; border-radius: 16px; padding: 28px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); }
+    .card-premium { background: white; border-radius: 16px; padding: 28px; margin-bottom: 16px; box-shadow: 0 1px 3px rgba(0,0,0,0.08); border: 2px solid #7B5CC8; }
+    .premium-badge { display: inline-block; background: linear-gradient(135deg, #7B5CC8, #E8506A); color: white; border-radius: 20px; padding: 3px 12px; font-size: 12px; font-weight: 600; margin-left: 8px; vertical-align: middle; }
+    h1 { font-size: 22px; font-weight: 700; color: #1C1C1E; margin-bottom: 12px; }
+    h2 { font-size: 17px; font-weight: 600; color: #1C1C1E; margin-bottom: 8px; margin-top: 20px; }
+    h2:first-child { margin-top: 0; }
+    p { font-size: 15px; color: #3A3A3C; margin-bottom: 12px; }
+    ul { list-style: none; margin-bottom: 12px; }
+    ul li { font-size: 15px; color: #3A3A3C; padding: 4px 0 4px 20px; position: relative; }
+    ul li::before { content: "•"; color: #7B5CC8; font-weight: bold; position: absolute; left: 0; }
+    .highlight { background: linear-gradient(135deg, #F0F7FF, #F5F0FF); border-left: 4px solid #7B5CC8; border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; }
+    .highlight p { margin: 0; color: #1C1C1E; font-weight: 500; }
+    .highlight-icloud { background: linear-gradient(135deg, #F0F7FF, #E8F4FD); border-left: 4px solid #4B9EF5; border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 16px 0; }
+    .highlight-icloud p { margin: 0; color: #1C1C1E; }
+    .info-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid #F2F2F7; font-size: 15px; }
+    .info-row:last-child { border-bottom: none; }
+    .info-label { color: #8E8E93; }
+    .info-value { color: #1C1C1E; font-weight: 500; }
+    .comparison { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin: 16px 0; }
+    .comparison-box { border-radius: 12px; padding: 16px; font-size: 14px; }
+    .basic-box { background: #F2F2F7; }
+    .premium-box { background: linear-gradient(135deg, #F5F0FF, #FFF0F5); border: 1px solid #E8D5FF; }
+    .comparison-box h3 { font-size: 14px; font-weight: 700; margin-bottom: 8px; color: #1C1C1E; }
+    .comparison-box ul li { font-size: 13px; padding: 2px 0 2px 16px; }
+    a { color: #7B5CC8; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    .date { text-align: center; font-size: 13px; color: #8E8E93; margin-top: 32px; }
+    footer { background: linear-gradient(135deg, #4B9EF5 0%, #7B5CC8 45%, #E8506A 100%); padding: 24px; text-align: center; color: rgba(255,255,255,0.8); font-size: 13px; }
+  </style>
+</head>
+<body>
+<header>
+  <div class="logo">🚲 BikePass</div>
+  <div class="logo-sub">von TF Apps</div>
+  <div class="badge">Datenschutzerklärung</div>
+</header>
+<div class="container">
+  <div class="card">
+    <div class="highlight">
+      <p>✅ BikePass speichert alle Daten standardmäßig ausschließlich lokal auf deinem Gerät. Premium-Nutzer können optional iCloud Backup aktivieren.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h1>Datenschutzerklärung</h1>
+    <p>Diese Datenschutzerklärung gilt für die iOS-App <strong>BikePass</strong>, entwickelt von TF Apps.</p>
+    <p>Der Schutz deiner persönlichen Daten ist uns wichtig. Diese Erklärung informiert dich darüber, welche Daten die App verarbeitet und wie sie gespeichert werden.</p>
+  </div>
+  <div class="card">
+    <h1>1. Datenspeicherung – Übersicht</h1>
+    <div class="comparison">
+      <div class="comparison-box basic-box">
+        <h3>📱 Basic (kostenlos)</h3>
+        <ul><li>Nur lokal auf dem Gerät</li><li>Keine Cloud</li><li>Keine Server</li><li>Vollständig offline</li></ul>
+      </div>
+      <div class="comparison-box premium-box">
+        <h3>⭐ Premium</h3>
+        <ul><li>Lokal auf dem Gerät</li><li>Optional: iCloud Backup</li><li>Keine eigenen Server</li><li>Du hast die Kontrolle</li></ul>
+      </div>
+    </div>
+    <p>Folgende Daten können gespeichert werden:</p>
+    <ul>
+      <li>Fahrradinformationen (Marke, Modell, Rahmennummer etc.)</li>
+      <li>Fotos deiner Fahrräder</li>
+      <li>Persönliche Kontaktdaten (Fahrzeughalter)</li>
+      <li>Hochgeladene Dokumente (Rechnungen)</li>
+      <li>Kaufinformationen, Leasing-Daten und Notizen</li>
+    </ul>
+    <div class="highlight">
+      <p>Diese Daten verlassen dein Gerät nur, wenn du aktiv eine Exportfunktion verwendest oder iCloud Backup aktiviert hast.</p>
+    </div>
+  </div>
+  <div class="card-premium">
+    <h1>2. iCloud Backup <span class="premium-badge">Premium</span></h1>
+    <p>Premium-Nutzer können optional das iCloud Backup aktivieren. Dies ermöglicht die sichere Sicherung und Wiederherstellung aller Daten – auch nach Neuinstallation oder Gerätewechsel.</p>
+    <div class="highlight-icloud">
+      <p>☁️ Bei aktiviertem iCloud Backup werden deine Daten in deiner <strong>persönlichen iCloud</strong> gespeichert. TF Apps hat <strong>keinen Zugriff</strong> auf deine iCloud-Daten. Die Daten gehören ausschließlich dir.</p>
+    </div>
+    <h2>Was gesichert wird:</h2>
+    <ul>
+      <li>Alle Fahrraddaten und Einstellungen</li>
+      <li>Fotos deiner Fahrräder</li>
+      <li>Hochgeladene Dokumente</li>
+      <li>Dein Nutzerprofil (Fahrzeughalter-Daten)</li>
+    </ul>
+    <h2>Wichtige Hinweise:</h2>
+    <ul>
+      <li>iCloud Backup ist standardmäßig deaktiviert</li>
+      <li>Du kannst es jederzeit in den App-Einstellungen aktivieren oder deaktivieren</li>
+      <li>Die Synchronisation erfolgt über Apple's CloudKit</li>
+      <li>Es gelten zusätzlich die <a href="https://www.apple.com/de/legal/privacy/" target="_blank">Datenschutzbestimmungen von Apple</a></li>
+      <li>Deine iCloud-Daten kannst du unter iOS-Einstellungen → [dein Name] → iCloud löschen</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h1>3. Keine eigenen Server</h1>
+    <p>TF Apps betreibt <strong>keine eigenen Server</strong> und hat keinen Zugriff auf deine Daten. Es gibt:</p>
+    <ul>
+      <li>Keine Registrierung oder Benutzerkonten bei TF Apps</li>
+      <li>Keine Analyse- oder Tracking-Tools</li>
+      <li>Keine Werbung oder Werbe-Netzwerke</li>
+      <li>Keine Datenweitergabe an Dritte</li>
+    </ul>
+  </div>
+  <div class="card">
+    <h1>4. In-App-Käufe</h1>
+    <p>BikePass bietet einen optionalen Premium-Kauf (einmalig 2,99 €) an. Dieser wird vollständig über <strong>Apple's In-App-Purchase System</strong> abgewickelt. TF Apps hat keinen Zugriff auf deine Zahlungsinformationen.</p>
+  </div>
+  <div class="card">
+    <h1>5. Berechtigungen</h1>
+    <div class="info-row"><span class="info-label">📷 Kamera &amp; Fotos</span><span class="info-value">Für Fahrradfotos</span></div>
+    <div class="info-row"><span class="info-label">📁 Dateizugriff</span><span class="info-value">Für Dokument-Upload (Premium)</span></div>
+    <div class="info-row"><span class="info-label">☁️ iCloud</span><span class="info-value">Für Backup (Premium, optional)</span></div>
+  </div>
+  <div class="card">
+    <h1>6. Datenlöschung</h1>
+    <ul>
+      <li><strong>Einzelne Daten:</strong> Direkt in der App löschbar</li>
+      <li><strong>Alle lokalen Daten:</strong> App deinstallieren</li>
+      <li><strong>iCloud-Daten (Premium):</strong> iOS-Einstellungen → [dein Name] → iCloud → BikePass</li>
+    </ul>
+    <div class="highlight">
+      <p>⚠️ Bei Deinstallation ohne aktives iCloud Backup werden alle Daten unwiderruflich gelöscht.</p>
+    </div>
+  </div>
+  <div class="card">
+    <h1>7. Kontakt</h1>
+    <div class="info-row"><span class="info-label">Entwickler</span><span class="info-value">TF Apps</span></div>
+    <div class="info-row"><span class="info-label">E-Mail</span><span class="info-value"><a href="mailto:tfapps.support@gmail.com">tfapps.support@gmail.com</a></span></div>
+  </div>
+  <div class="card">
+    <h1>8. Änderungen</h1>
+    <p>Diese Datenschutzerklärung kann gelegentlich aktualisiert werden. Die aktuelle Version ist stets unter dieser URL abrufbar.</p>
+  </div>
+  <p class="date">Stand: April 2026 · TF Apps · BikePass v1.0</p>
+</div>
+<footer>BikePass · TF Apps · tfapps.support@gmail.com</footer>
+</body>
+</html>
