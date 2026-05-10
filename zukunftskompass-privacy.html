@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dein ZukunftsKompass – Datenschutzerklärung</title>
+  <style>
+    :root {
+      --violet: #5b2dc8;
+      --violet-dark: #2d1060;
+      --violet-darkest: #1a0533;
+      --violet-light: #f0ebff;
+      --violet-border: #d4c5f5;
+      --violet-mid: #7c4ddb;
+      --green: #1a7a4a;
+      --green-light: #e8f7ef;
+      --amber: #e07800;
+      --amber-light: #fef3e2;
+      --text-dark: #26215c;
+      --text-body: #3d3660;
+      --text-muted: #7b72a8;
+      --white: #ffffff;
+      --bg: #f7f5ff;
+      --card: #ffffff;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+      background: var(--bg);
+      color: var(--text-body);
+      line-height: 1.6;
+    }
+
+    /* HEADER */
+    .header {
+      background: linear-gradient(135deg, var(--violet-darkest) 0%, var(--violet-dark) 50%, var(--violet) 100%);
+      padding: 56px 24px 48px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .header::before {
+      content: '';
+      position: absolute;
+      top: -60px; right: -60px;
+      width: 220px; height: 220px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.08);
+    }
+    .header::after {
+      content: '';
+      position: absolute;
+      bottom: -40px; left: -40px;
+      width: 160px; height: 160px;
+      border-radius: 50%;
+      border: 2px solid rgba(255,255,255,0.06);
+    }
+
+    .header-icon {
+      width: 72px; height: 72px;
+      border-radius: 18px;
+      margin: 0 auto 16px;
+      background: rgba(255,255,255,0.12);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 36px;
+      backdrop-filter: blur(8px);
+      border: 1px solid rgba(255,255,255,0.2);
+    }
+
+    .header h1 {
+      font-size: 26px;
+      font-weight: 700;
+      color: #ffffff;
+      letter-spacing: -0.3px;
+      margin-bottom: 4px;
+    }
+
+    .header .subtitle {
+      color: rgba(255,255,255,0.65);
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+
+    .header-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.15);
+      color: rgba(255,255,255,0.9);
+      border: 1px solid rgba(255,255,255,0.25);
+      border-radius: 20px;
+      padding: 6px 16px;
+      font-size: 13px;
+      backdrop-filter: blur(8px);
+    }
+
+    /* MAIN */
+    .main {
+      max-width: 680px;
+      margin: 0 auto;
+      padding: 32px 16px 64px;
+    }
+
+    /* HIGHLIGHT BOX */
+    .highlight {
+      background: var(--green-light);
+      border-left: 4px solid var(--green);
+      border-radius: 12px;
+      padding: 16px 20px;
+      margin-bottom: 28px;
+      font-size: 15px;
+      color: #1a4a32;
+      font-weight: 500;
+    }
+
+    /* CARDS */
+    .card {
+      background: var(--card);
+      border-radius: 16px;
+      padding: 24px;
+      margin-bottom: 16px;
+      box-shadow: 0 1px 4px rgba(91,45,200,0.07), 0 0 0 1px rgba(91,45,200,0.06);
+    }
+
+    .card h2 {
+      font-size: 18px;
+      font-weight: 700;
+      color: var(--text-dark);
+      margin-bottom: 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .card h2 .num {
+      background: var(--violet-light);
+      color: var(--violet);
+      border-radius: 8px;
+      width: 28px; height: 28px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 13px;
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+
+    .card p {
+      font-size: 15px;
+      color: var(--text-body);
+      margin-bottom: 12px;
+    }
+    .card p:last-child { margin-bottom: 0; }
+
+    ul.list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    ul.list li {
+      font-size: 15px;
+      color: var(--text-body);
+      padding: 6px 0 6px 20px;
+      position: relative;
+      border-bottom: 1px solid var(--violet-border);
+    }
+    ul.list li:last-child { border-bottom: none; }
+    ul.list li::before {
+      content: '·';
+      position: absolute;
+      left: 6px;
+      color: var(--violet);
+      font-weight: 700;
+    }
+
+    /* TWO COLUMN */
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    .col-box {
+      background: var(--violet-light);
+      border-radius: 12px;
+      padding: 14px 16px;
+      border: 1px solid var(--violet-border);
+    }
+    .col-box .col-title {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--violet);
+      margin-bottom: 8px;
+    }
+    .col-box ul {
+      list-style: none;
+      padding: 0;
+    }
+    .col-box ul li {
+      font-size: 13px;
+      color: var(--text-body);
+      padding: 3px 0;
+      padding-left: 14px;
+      position: relative;
+    }
+    .col-box ul li::before {
+      content: '·';
+      position: absolute; left: 2px;
+      color: var(--violet);
+      font-weight: 700;
+    }
+
+    /* INFO BOX */
+    .info-box {
+      background: var(--violet-light);
+      border-left: 4px solid var(--violet);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: var(--text-dark);
+    }
+
+    /* AMBER BOX */
+    .amber-box {
+      background: var(--amber-light);
+      border-left: 4px solid var(--amber);
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-top: 14px;
+      font-size: 14px;
+      color: #5a3200;
+    }
+
+    /* TABLE */
+    .perm-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 4px;
+    }
+    .perm-table tr {
+      border-bottom: 1px solid var(--violet-border);
+    }
+    .perm-table tr:last-child { border-bottom: none; }
+    .perm-table td {
+      padding: 10px 4px;
+      font-size: 14px;
+      color: var(--text-body);
+    }
+    .perm-table td:first-child {
+      color: var(--text-muted);
+      width: 50%;
+    }
+    .perm-table td:last-child {
+      font-weight: 600;
+      color: var(--text-dark);
+      text-align: right;
+    }
+
+    /* CONTACT */
+    .contact-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .contact-table tr {
+      border-bottom: 1px solid var(--violet-border);
+    }
+    .contact-table tr:last-child { border-bottom: none; }
+    .contact-table td {
+      padding: 10px 4px;
+      font-size: 15px;
+    }
+    .contact-table td:first-child {
+      color: var(--text-muted);
+    }
+    .contact-table td:last-child {
+      text-align: right;
+      font-weight: 600;
+      color: var(--text-dark);
+    }
+    .contact-table a {
+      color: var(--violet);
+      text-decoration: none;
+    }
+
+    /* FOOTER */
+    .footer {
+      text-align: center;
+      padding: 24px 16px;
+      font-size: 12px;
+      color: var(--text-muted);
+      border-top: 1px solid var(--violet-border);
+    }
+
+    @media (max-width: 480px) {
+      .two-col { grid-template-columns: 1fr; }
+      .header h1 { font-size: 22px; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-icon">🧭</div>
+    <h1>Dein ZukunftsKompass</h1>
+    <div class="subtitle">von TF Apps</div>
+    <div class="header-badge">Datenschutzerklärung</div>
+  </div>
+
+  <div class="main">
+
+    <!-- HIGHLIGHT -->
+    <div class="highlight">
+      ✅ Dein ZukunftsKompass speichert alle eingegebenen Daten ausschließlich lokal auf deinem Gerät. Es gibt keine Server, keine Cloud und keine Weitergabe an Dritte.
+    </div>
+
+    <!-- 1. EINLEITUNG -->
+    <div class="card">
+      <h2><span class="num"></span> Datenschutzerklärung</h2>
+      <p>Diese Datenschutzerklärung gilt für die iOS-App <strong>Dein ZukunftsKompass</strong>, entwickelt von TF Apps.</p>
+      <p>Der Schutz deiner persönlichen Daten ist uns wichtig. Diese Erklärung informiert dich darüber, welche Daten die App verarbeitet und wie sie gespeichert werden.</p>
+    </div>
+
+    <!-- 2. DATENSPEICHERUNG -->
+    <div class="card">
+      <h2><span class="num">1</span> Datenspeicherung</h2>
+
+      <div class="two-col">
+        <div class="col-box">
+          <div class="col-title">📱 Lokal (Standard)</div>
+          <ul>
+            <li>Nur auf deinem Gerät</li>
+            <li>Keine Cloud</li>
+            <li>Keine Server</li>
+            <li>Vollständig offline</li>
+          </ul>
+        </div>
+        <div class="col-box">
+          <div class="col-title">🔒 Deine Kontrolle</div>
+          <ul>
+            <li>Du hast die volle Kontrolle</li>
+            <li>Keine Registrierung nötig</li>
+            <li>Kein Benutzerkonto</li>
+            <li>Jederzeit löschbar</li>
+          </ul>
+        </div>
+      </div>
+
+      <p>Folgende Eingaben können lokal gespeichert werden:</p>
+      <ul class="list">
+        <li>Planungsparameter (Alter, Rentenbeginn, Sparrate, Startkapital)</li>
+        <li>Gewählte Anlagestrategie</li>
+        <li>Einstellungen zur Entnahmedauer</li>
+        <li>Zuletzt verwendete Werte zur Komfort-Wiederherstellung</li>
+      </ul>
+
+      <div class="info-box">
+        💡 Diese Daten verlassen dein Gerät niemals. TF Apps hat keinen Zugriff auf deine Eingaben oder Berechnungsergebnisse.
+      </div>
+    </div>
+
+    <!-- 3. KEINE SERVER -->
+    <div class="card">
+      <h2><span class="num">2</span> Keine eigenen Server</h2>
+      <p>TF Apps betreibt <strong>keine eigenen Server</strong> und hat keinen Zugriff auf deine Daten. Es gibt:</p>
+      <ul class="list">
+        <li>Keine Registrierung oder Benutzerkonten bei TF Apps</li>
+        <li>Keine Analyse- oder Tracking-Tools</li>
+        <li>Keine Werbung oder Werbe-Netzwerke</li>
+        <li>Keine Datenweitergabe an Dritte</li>
+        <li>Keine anonymisierten Nutzungsstatistiken</li>
+      </ul>
+    </div>
+
+    <!-- 4. IN-APP-KÄUFE -->
+    <div class="card">
+      <h2><span class="num">3</span> In-App-Käufe</h2>
+      <p>Dein ZukunftsKompass bietet einen optionalen Einmalkauf für den <strong>PDF-Export</strong> (0,99 €) an. Dieser wird vollständig über <strong>Apple's In-App-Purchase System</strong> abgewickelt.</p>
+      <p>TF Apps hat keinen Zugriff auf deine Zahlungsinformationen. Es gelten die Datenschutzbestimmungen von Apple.</p>
+      <div class="info-box">
+        Nach einmaligem Kauf ist der PDF-Export dauerhaft und ohne weitere Kosten nutzbar.
+      </div>
+    </div>
+
+    <!-- 5. MODELLRECHNUNGEN -->
+    <div class="card">
+      <h2><span class="num">4</span> Modellrechnungen und Haftung</h2>
+      <p>Alle Berechnungen in Dein ZukunftsKompass sind <strong>Modellrechnungen</strong>. Sie dienen ausschließlich zur Orientierung und ersetzen keine individuelle Finanzberatung.</p>
+      <ul class="list">
+        <li>Keine Garantie für zukünftige Renditen oder Rentenhöhen</li>
+        <li>Keine Anlageempfehlung oder Anlageberatung</li>
+        <li>Ergebnisse sind Szenarien, keine Zusagen</li>
+        <li>Für verbindliche Planung bitte einen Finanzberater konsultieren</li>
+      </ul>
+      <div class="amber-box">
+        ⚠️ Dein ZukunftsKompass ist ein Bildungs- und Simulationswerkzeug – kein lizenzierter Finanzberater und keine Rentenkasse.
+      </div>
+    </div>
+
+    <!-- 6. BERECHTIGUNGEN -->
+    <div class="card">
+      <h2><span class="num">5</span> Berechtigungen</h2>
+      <p>Die App benötigt keine besonderen Systemberechtigungen. Es wird kein Zugriff auf folgende Bereiche angefordert:</p>
+      <table class="perm-table">
+        <tr><td>📷 Kamera & Fotos</td><td>Nicht benötigt</td></tr>
+        <tr><td>📍 Standort</td><td>Nicht benötigt</td></tr>
+        <tr><td>📇 Kontakte</td><td>Nicht benötigt</td></tr>
+        <tr><td>☁️ iCloud</td><td>Nicht benötigt</td></tr>
+        <tr><td>🔔 Benachrichtigungen</td><td>Nicht benötigt</td></tr>
+      </table>
+      <div class="info-box">
+        Die einzige Systemberechtigung ist der Zugriff auf Apple's In-App-Purchase System für den optionalen PDF-Export-Kauf.
+      </div>
+    </div>
+
+    <!-- 7. DATENLÖSCHUNG -->
+    <div class="card">
+      <h2><span class="num">6</span> Datenlöschung</h2>
+      <ul class="list">
+        <li><strong>Einzelne Eingaben:</strong> Direkt in der App zurücksetzbar</li>
+        <li><strong>Alle lokalen Daten:</strong> App deinstallieren</li>
+      </ul>
+      <div class="amber-box">
+        ⚠️ Bei Deinstallation werden alle lokal gespeicherten Eingaben und Einstellungen unwiderruflich gelöscht.
+      </div>
+    </div>
+
+    <!-- 8. KONTAKT -->
+    <div class="card">
+      <h2><span class="num">7</span> Kontakt</h2>
+      <table class="contact-table">
+        <tr>
+          <td>Entwickler</td>
+          <td>TF Apps</td>
+        </tr>
+        <tr>
+          <td>E-Mail</td>
+          <td><a href="mailto:tfapps.support@gmail.com">tfapps.support@gmail.com</a></td>
+        </tr>
+      </table>
+    </div>
+
+    <!-- 9. ÄNDERUNGEN -->
+    <div class="card">
+      <h2><span class="num">8</span> Änderungen</h2>
+      <p>Diese Datenschutzerklärung kann gelegentlich aktualisiert werden. Die aktuelle Version ist stets unter dieser URL abrufbar.</p>
+    </div>
+
+  </div>
+
+  <!-- FOOTER -->
+  <div class="footer">
+    Stand: Mai 2026 · TF Apps · Dein ZukunftsKompass v1.0
+  </div>
+
+</body>
+</html>
